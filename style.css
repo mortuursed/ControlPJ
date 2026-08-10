@@ -1,0 +1,36 @@
+.container {
+  width: 1020px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+.header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header .container{
+display: flex;
+align-items: center;
+
+}
+
+.header_img {
+  width: 93px;
+  height: 39px;
+  margin-right: 93px;
+}
+
+.header_list {
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  gap: 50px;
+}
+
+
