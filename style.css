@@ -6,15 +6,15 @@
   outline: 1px solid red;
 }
 
-.header{
-    padding-top: 20px;
-    padding-bottom: 20px;
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.header .container{
-display: flex;
-align-items: center;
-
+.header .container {
+  display: flex;
+  align-items: center;
 }
 
 .header_img {
@@ -33,4 +33,677 @@ align-items: center;
   gap: 50px;
 }
 
+.popular_game {
+  margin: 0 auto;
+  margin-bottom: 36px;
+  width: 386px;
+  height: 29px;
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+}
 
+.popular_line {
+  width: 536px;
+  margin-bottom: 36px;
+  border: none;
+  height: 1px;
+  background-color: #000;
+}
+
+.popular_titlle {
+  margin: 0 auto 30px auto;
+  text-align: center;
+  width: auto;
+  color: #000;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.popular_subtitle {
+  text-align: center;
+  margin: 0 auto 20px auto;
+  color: #000;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.popular_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  margin-bottom: 40px;
+}
+
+.popular_form {
+  display: flex;
+  align-items: center;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 280px;
+  height: 38px;
+}
+
+.popular_input {
+  flex: 1;
+  width: 170px;
+  height: 35px;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0 16px;
+  color: #7e7e7e;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #333;
+}
+
+.popular_btn {
+  width: 45px;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: #000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.popular_btn img {
+  width: 16px;
+  height: 16px;
+}
+
+.popular_result {
+  width: 212px;
+  height: 15px;
+  color: #039900;
+  text-align: right;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.popular_line {
+  border: none;
+  height: 1px;
+  background-color: #000;
+}
+
+/* =============================== */
+
+/* Разметка и общие стили секции */
+.number {
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1200px; /* При необходимости отрегулируйте под ширину вашего макета */
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.number_title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.numer_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 170px;
+  margin-bottom: 40px;
+}
+
+.numer_form {
+  display: flex;
+  align-items: center;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.number_input {
+  border: none;
+  background: transparent;
+  padding: 10px 20px;
+  font-size: 17px;
+  outline: none;
+  color: #333333;
+}
+
+.number_input::placeholder {
+  color: #757575;
+}
+
+.number_btn {
+  border: none;
+  background-color: #000000;
+  padding: 10px 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.number_btn img {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.number_result {
+  font-size: 16px;
+  color: #00ca00;
+  margin: 0;
+}
+
+.number_line {
+  border: none;
+  border-top: 2px solid #000000;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.play_titlle {
+  margin: auto;
+  width: 195px;
+  height: 20px;
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 36px;
+}
+
+.play_block {
+  position: relative;
+}
+
+.play_list {
+  position: absolute;
+  top: -63px;
+  right: 0;
+}
+
+.play_check {
+  width: 93px;
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+}
+
+.play_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+
+.play_img {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+}
+
+.play_link {
+  width: 120px;
+  display: flex;
+  margin: auto;
+  margin-top: 36px;
+  color: #039900;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.play_btn {
+  color: white;
+  background: #000;
+  display: block;
+  padding: 10px 20px;
+  margin: 0 auto;
+  margin-top: 36px;
+  align-items: flex-start;
+  font-family: "Montserrat Alternates";
+  gap: 10px;
+  border-radius: 20px;
+}
+
+.play_liner {
+  width: 536px;
+  height: 1px;
+  background-color: #000;
+}
+/* =================================== */
+
+.container.abacus {
+  display: flex;
+  gap: 38px ;
+  padding-top:36px ;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.calculator_block {
+  display: flex;
+  width: 73px;
+  height: 60px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.calculator_titlle { 
+  position: absolute;
+  top: 840px; 
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  white-space: nowrap; }
+
+.calculator_number{
+  width: 155.0px;
+height: 35.0px;
+padding: 10px 20px;
+display: inline-flex;
+padding: 10px 20px;
+align-items: flex-start;
+gap: 10px;
+border-radius: 20px;
+background: #D7D7D7;
+border: none;
+box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+
+}
+
+.calculator_btn {
+width: 25px;
+  height: 25px;
+  padding: 0; 
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+}
+
+
+.calculator_rovno{
+width: 27.0px;
+height: 27.0px;
+padding: 5px 10px;
+display: flex;
+padding: 5px 10px;
+align-items: center;
+justify-content: center;
+align-items: flex-start;
+gap: 10px;
+border-radius: 20px;
+border: none;
+background: #000;
+box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+color: white;
+}
+
+.calculator_res{
+  width: 118.0px;
+height: 35.0px;
+padding: 10px 20px;
+display:flex;
+padding: 10px 20px;
+justify-content: center;
+text-align: center;
+align-items: center;
+gap: 10px;
+border-radius: 20px;
+border: none;
+background: #D7D7D7;
+}
+
+
+.header_hi{
+  margin-left: auto;
+}
+
+.back_drop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #00000053;
+}
+
+.modal{
+width: 576.0px;
+height: 316.0px;
+border-radius: 20px;
+background: #FFF;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: 46px 92px;
+}
+
+.modal_btn{
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 15.0px;
+height: 15.0px;
+}
+
+.modal_block{
+  display: flex;
+ justify-content: space-around;
+ align-items: center;
+ flex-direction: column;
+ gap: 18px;
+}
+
+.modal_suptext{
+  color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+}
+
+
+.modal_button{
+  display: inline-flex;
+padding: 10px 20px;
+align-items: flex-start;
+gap: 10px;
+border-radius: 20px;
+background: #000;
+box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+color: white;
+
+}
+
+
+.modal_input{
+  width: 169.0px;
+height: 35.0px;
+display: inline-flex;
+padding: 10px 90px 10px 10px;
+align-items: flex-start;
+gap: 10px;
+border-radius: 20px;
+border: none;
+border: 1px solid gray;
+background: #D7D7D7;
+
+}
+
+.modal_txt{
+  width: 392.0px;
+height: 60.0px;
+color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+
+
+
+
+
+.ishidden{
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+.container.clock_wrap{
+  padding-top: 72px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.clock_titlle{
+   position: absolute;
+  top: 963px; 
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  white-space: nowrap; 
+}
+
+.clock_wrap{
+  display: flex;
+gap: 33px;
+}
+
+.clock_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.clock_input {
+  width: 150px;
+  height: 35px;
+  border: none;
+  background: transparent;
+  padding: 10px 20px;
+  font-size: 17px;
+  outline: none;
+  color: #333333;
+}
+
+.clock_input::placeholder {
+  color: #757575;
+}
+
+.clock_btn {
+  border: none;
+  background-color: #000000;
+  padding: 10px 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+
+
+.clokc_res{
+  width: 76.0px;
+height: 15.0px;
+  color: #000;
+font-family: "Montserrat Alternates";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+}
+
+
+.dots {
+width: 100px;
+  border-top: 2px dotted #333; 
+  height: 1px;
+  align-self: center;
+}
+
+
+.dino_titlle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+font-family: "Montserrat Alternates";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+}
+
+canvas {
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+}
+
+.football_title{
+  display: flex;
+  justify-content: center;
+  color: #000;
+font-family: "Montserrat Alternates";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 36px;
+}
+
+.football_block{
+  display: flex;
+margin: 0 auto;
+  width: 720.0px;
+height: 220.0px;
+  border-radius: 37px;
+border: 2px solid #000;
+background: #5ABB58;
+
+}
+
+
+.collection_title{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 36px;
+  color: #000;
+font-family: "Montserrat Alternates";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+}
+
+
+.collection_list{
+  display: flex;
+justify-content: center;
+  align-items: center;
+
+}
+
+.collection_item{
+display: flex;
+gap: 38px;
+margin-bottom: 36px;
+}
+
+.collection_inpt{
+  display: inline-flex;
+padding: 10px 20px;
+align-items: flex-start;
+gap: 10px;
+border-radius: 20px;
+background: #D7D7D7;
+border: none;
+outline: 1px solid black;
+box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+}
+
+
+.collection_num{
+  color: #000;
+  display: flex;
+  justify-content: center;
+font-family: "Montserrat Alternates";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.scientists_list{
+  display: grid;
+ grid-template-columns: repeat(4,100px);
+ justify-content: center;
+ gap: 60px;
+}
+
+
+
+ .scientists_item {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+background: #D9D9D9;
+
+ }
+
+
+.scientists_text {
+  color: #000;
+text-align: center;
+font-family: "Montserrat Alternates";
+font-size: 8px;
+font-style: normal;
+font-weight: 400;
+line-height: 170%;
+
+}
+
+.scientists_wrap{
+  
+}
