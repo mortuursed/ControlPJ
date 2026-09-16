@@ -52,7 +52,13 @@ const getCollectionInput = document.querySelectorAll(".collection_inpt");
 
 const getCollectionText = document.querySelector(".collection_num");
 
-const getScientistsUl = document.querySelector(".scientists_list")
+const getScientistsUl = document.querySelector(".scientists_list");
+
+const getScientistsBtn = document.querySelectorAll(".scientists_btn");
+
+const field = document.querySelector(".football_block");
+
+const ball = document.querySelector(".ball");
 
 getModalForm.addEventListener("submit", (evt) => {
   evt.preventDefault();
@@ -291,13 +297,71 @@ const scientists = [
 ];
 
 function renderSentis(array) {
-  const item = array.map(({ name, surname, born, dead, id }) => {
-    return `<li class="scientists_item"><p class = "scientists_text">${name} ${surname}</p><p class = "scientists_text">${born}-${dead}</p></li>`;
-  }).join("")
-  getScientistsUl.innerHTML = item
+  const item = array
+    .map(({ name, surname, born, dead, id }) => {
+      return `<li class="scientists_item"><p class = "scientists_text">${name} ${surname}</p><p class = "scientists_text">${born}-${dead}</p></li>`;
+    })
+    .join("");
+  getScientistsUl.innerHTML = item;
 }
 
-renderSentis(scientists)
+renderSentis(scientists);
+
+getScientistsBtn.forEach((btn) => {
+  btn.addEventListener("click", (event) => {
+    const action = event.target.dataset.action;
+    switch (action) {
+      case "born":
+        const born = scientists.filter(
+          ({ born }) => born >= 1800 && born < 1900,
+        );
+        renderSentis(born);
+        break;
+      case "albert":
+        const albert = scientists.filter(({ name }) => name === "Albert");
+        renderSentis(albert);
+        break;
+      case "sort":
+        const find = [...scientists].sort((a, b) =>
+          a.name.localeCompare(b.name),
+        );
+        renderSentis(find);
+        break;
+      case "find_s":
+        const sort = scientists.filter(({ surname }) =>
+          surname.startsWith("C"),
+        );
+        renderSentis(sort);
+        break;
+      case "live_year":
+        const sortedByAgeAsc = [...scientists].sort(
+          (a, b) => a.dead - a.born - (b.dead - b.born),
+        );
+        renderSentis(sortedByAgeAsc)
+        break;
+      case "delete_a":
+        const block = scientists.filter(({name}) => !name.startsWith("A") )
+        renderSentis(block)
+        break;
+      case "born_later":
+        const later = [...scientists].sort((a,b) => a.born - b.born)
+        console.log(later[later.length - 1]);
+        break;
+      case "live_more":
+        console.log(
+          "Знайти вченого, який прожив найдовше і вченого, який прожив найменше",
+        );
+        break;
+      case "familiar":
+        console.log(
+          "Знайти вчених, в яких співпадають перші літери імені і прізвища",
+        );
+        break;
+      default:
+        return;
+    }
+  });
+});
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

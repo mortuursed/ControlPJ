@@ -216,48 +216,48 @@
 
           <ul class="scientists_wrap">
             <li class="scientists_items">
-              <button class="scientists_btn">
+              <button data-action="born" class="scientists_btn">
                 Які вчені народилися в 19 ст.
               </button>
             </li>
             <li class="scientists_items">
-              <button class="scientists_btn">
+              <button data-action="albert" class="scientists_btn">
                 Знайти рік народження Albert Einshtein
               </button>
             </li>
             <li class="scientists_items">
-              <button class="scientists_btn">
+              <button data-action="sort" class="scientists_btn">
                 Відсортувати вчених за алфавітом
               </button>
             </li>
             <li class="scientists_items">
-              <button class="scientists_btn">
+              <button data-action="find_s" class="scientists_btn">
                 Знайти вчених, прізвища яких починаються на на літеру “С”
               </button>
             </li>
             <li class="scientists_items">
-              <button class="scientists_btn">
+              <button data-action="live_year" class="scientists_btn">
                 Відсортувати вчених за кількістю прожитих років
               </button>
             </li>
             <li class="scientists_items">
-              <button class="scientists_btn">
+              <button data-action="delete_a" class="scientists_btn">
                 Видалити всіх вчених, ім’я яких починається на “А”
               </button>
             </li>
             <li class="scientists_items">
-              <button class="scientists_btn">
+              <button data-action="born_later" class="scientists_btn">
                 Знайти вченого, який народився найпізніше
               </button>
             </li>
             <li class="scientists_items">
-              <button class="scientists_btn">
+              <button data-action="live_more" class="scientists_btn">
                 Знайти вченого, який прожив найдовше і вченого, який прожив
                 найменше
               </button>
             </li>
             <li class="scientists_items">
-              <button class="scientists_btn">
+              <button data-action="familiar" class="scientists_btn">
                 Знайти вчених, в яких співпадають перші літери імені і прізвища
               </button>
             </li>
@@ -265,7 +265,32 @@
         </div>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="container boxer">
+        <img class="footer_img"  src="./group.svg" alt="">
+      <div class="footer_contacts">
+        <p class="footer_text">Тел: +38 (123) 456 78 90</p>
+        <p  class="footer_text">E-Mail: codingmagic@gmail.com</p>
+        <p  class="footer_text">Facebook: CodingMagic</p>
+        <p  class="footer_text">Twitter: CodingMagic</p>
+        <p  class="footer_text">Instagram: CodingMagic</p>
+      </div>
+      <div class="footer_subscribe">
+        <form class="subscribe_form">
+          <input
+            type="email"
+            placeholder="Ваша ел адреса"
+            required
+            class="subscribe_input"
+          />
+          <button type="submit" class="subscribe_btn">Підписатись</button>
+        </form>
+        <p class="subscribe_note">
+          *Підписавшись, Ви зможете отримувати інформацію про новинки на сайті
+        </p>
+      </div>
+      </div>
+    </footer>
     <div class="back_drop">
       <div class="modal">
         <button class="modal_btn" type="button">X</button>

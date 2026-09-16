@@ -622,6 +622,7 @@ background: #5ABB58;
 }
 
 
+
 .collection_title{
   display: flex;
   justify-content: center;
@@ -673,6 +674,7 @@ font-weight: 400;
 line-height: normal;
 }
 .scientists_list{
+  margin-bottom: 36px;
   display: grid;
  grid-template-columns: repeat(4,100px);
  justify-content: center;
@@ -704,6 +706,113 @@ line-height: 170%;
 
 }
 
-.scientists_wrap{
+.scientists_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px 24px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none; 
+}
+
+.scientists_item {
+  display: flex;
+}
+
+
+.scientists_btn {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
   
+  padding: 12px 28px;
+  border: none;
+  border-radius: 50px;
+  
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+.scientists_btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+.container.boxer{
+  padding-top: 61px;
+  padding-bottom: 61px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_img{
+  width: 165.0px;
+height: 70.0px;
+
+}
+
+
+.subscribe_form {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.footer_contacts{
+  width: 207.0px;
+height: 100.0px;
+}
+
+.footer_text{
+  color: #000;
+font-family: "Montserrat Alternates";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 170%;
+
+}
+
+.subscribe_input {
+  width: 230px;
+  height: 45px;
+  background-color: #D9D9D9;
+  border: none;
+  border-radius: 30px;
+  padding: 0 20px;
+  margin-right: 36px;
+  font-size: 14px;
+  outline: none;
+  color: #333;
+}
+
+.subscribe_input::placeholder {
+  color: #757575;
+}
+
+.subscribe_btn {
+  height: 45px;
+  padding: 0 26px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.subscribe_btn:hover {
+  background-color: #333333;
+}
+
+.subscribe_note {
+  font-size: 10px;
+  color: #000000;
+  margin-top: 8px;
 }
