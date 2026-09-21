@@ -213,7 +213,6 @@
       <section class="scientists">
         <div class="container">
           <ul class="scientists_list"></ul>
-
           <ul class="scientists_wrap">
             <li class="scientists_items">
               <button data-action="born" class="scientists_btn">
@@ -267,28 +266,29 @@
     </main>
     <footer class="footer">
       <div class="container boxer">
-        <img class="footer_img"  src="./group.svg" alt="">
-      <div class="footer_contacts">
-        <p class="footer_text">Тел: +38 (123) 456 78 90</p>
-        <p  class="footer_text">E-Mail: codingmagic@gmail.com</p>
-        <p  class="footer_text">Facebook: CodingMagic</p>
-        <p  class="footer_text">Twitter: CodingMagic</p>
-        <p  class="footer_text">Instagram: CodingMagic</p>
-      </div>
-      <div class="footer_subscribe">
-        <form class="subscribe_form">
-          <input
-            type="email"
-            placeholder="Ваша ел адреса"
-            required
-            class="subscribe_input"
-          />
-          <button type="submit" class="subscribe_btn">Підписатись</button>
-        </form>
-        <p class="subscribe_note">
-          *Підписавшись, Ви зможете отримувати інформацію про новинки на сайті
-        </p>
-      </div>
+        <img class="footer_img" src="./group.svg" alt="" />
+        <div class="footer_contacts">
+          <p class="footer_text">Тел: +38 (123) 456 78 90</p>
+          <p class="footer_text">E-Mail: codingmagic@gmail.com</p>
+          <p class="footer_text">Facebook: CodingMagic</p>
+          <p class="footer_text">Twitter: CodingMagic</p>
+          <p class="footer_text">Instagram: CodingMagic</p>
+        </div>
+        <div class="footer_subscribe">
+          <form class="subscribe_form">
+            <input
+              type="email"
+              placeholder="Ваша ел адреса"
+              required
+              class="subscribe_input"
+              name="firma"
+            />
+            <button type="submit" class="subscribe_btn">Підписатись</button>
+          </form>
+          <p class="subscribe_note">
+            *Підписавшись, Ви зможете отримувати інформацію про новинки на сайті
+          </p>
+        </div>
       </div>
     </footer>
     <div class="back_drop">
@@ -309,6 +309,20 @@
           </label>
         </form>
       </div>
+    </div>
+    <div class="modal_thnk">    
+        <div class="modal_drop">
+        <div class="modal_wrap">
+          <div class="modal_bloker">
+            <img src="./cross_null.svg" id="img_one" alt="" class="modal_img" />
+            <img src="./development.svg" id="img_two" alt="" class="modal_img" />
+            <img src="./puzzle.svg" alt="" id="img_three" class="modal_img" />
+            <img src="./sword.svg" alt="" id="img_foor" class="modal_img" />
+          </div>
+          <p class="modal_text">Дякую за підписку!</p>
+          <button class="modal_close">X</button>
+        </div>
+    </div>
     </div>
     <script src="./main.js" type="module"></script>
   </body>

@@ -60,6 +60,12 @@ const field = document.querySelector(".football_block");
 
 const ball = document.querySelector(".ball");
 
+const getModalThnk = document.querySelector(".modal_thnk")
+
+const getModalFooterForm = document.querySelector(".subscribe_form")
+
+const getModalFooterClose = document.querySelector(".modal_close")
+
 getModalForm.addEventListener("submit", (evt) => {
   evt.preventDefault();
   const userName = evt.currentTarget.elements.name.value.trim();
@@ -90,6 +96,7 @@ getBackDrop.addEventListener("click", (evt) => {
 window.addEventListener("keydown", (evt) => {
   if (evt.key === "Escape") {
     closeModal();
+     getModalThnk.style.display = block
   }
 });
 
@@ -348,20 +355,85 @@ getScientistsBtn.forEach((btn) => {
         console.log(later[later.length - 1]);
         break;
       case "live_more":
-        console.log(
-          "Знайти вченого, який прожив найдовше і вченого, який прожив найменше",
-        );
+    const longestLived = scientists.reduce((longest, scientist) => {
+      // console.log(longest);
+      // console.log(scientist);
+      
+      
+  const longestAge = longest.dead - longest.born;
+  
+  const scientistAge = scientist.dead - scientist.born;
+  if (scientistAge > longestAge) {
+    return scientist;
+  }
+
+  return longest;
+});
+
+const result = [longestLived];
+renderSentis(result)
         break;
       case "familiar":
-        console.log(
-          "Знайти вчених, в яких співпадають перші літери імені і прізвища",
-        );
+        const litter = scientists.filter(({name , surname}) => name[0] === surname[0])
+      renderSentis(litter)
         break;
       default:
         return;
     }
   });
 });
+
+
+
+// getModalForm.addEventListener("submit", (evt) => {
+//   evt.preventDefault();
+//   const userName = evt.currentTarget.elements.name.value.trim();
+//   if (!userName) {
+//     return;
+//   }
+//   getSpan.textContent = userName;
+
+//   evt.currentTarget.reset();
+
+//   closeModal();
+// });
+
+// function closeModal() {
+//   getBackDrop.classList.add("ishidden");
+// }
+
+// getCloseBtn.addEventListener("click", () => {
+//   closeModal();
+// });
+
+// getBackDrop.addEventListener("click", (evt) => {
+//   if (evt.currentTarget === evt.target) {
+//     closeModal();
+//   }
+// });
+
+ getModalFooterForm .addEventListener("submit", (evt) => {
+  evt.preventDefault()
+  const value = evt.currentTarget.elements.firma.value
+console.log(value);
+if(!value){
+  return
+}
+
+getModalThnk.style.display = "block"
+})
+
+getModalFooterClose.addEventListener("click", (evt) => {
+  getModalThnk.style.display = "block"
+})
+
+
+
+
+
+
+
+
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
